@@ -1,0 +1,339 @@
+## Игнорировать всё
+/*
+
+## Но отслеживать эти файлы
+!.gitignore
+!*.cpp
+!*.c
+!*.h
+!*.hpp
+!*.hxx
+!*.inl
+!CMakeLists.txt
+!Makefile
+!*.txt
+!*.md
+!*.json
+!*.xml
+!*.yml
+!*.yaml
+!*.config
+!*.props
+!*.targets
+
+## Исключения для корневых файлов проекта
+!*.sln
+!*.vcxproj
+!*.vcxproj.filters
+!*.vcxproj.user
+
+# Исключения для папок
+!/src/
+!/include/
+!/libs/
+!/docs/
+!/tests/
+!/thirdparty/
+
+## Файлы Visual Studio (основные)
+## ================================
+
+# Файлы пользовательских настроек
+*.user
+*.userosscache
+*.sln.docstates
+
+# Файлы результатов тестирования
+[Tt]est[Rr]esult*/
+[Bb]uild[Ll]og.*
+
+# Файлы резервных копий и временные файлы
+*~$*
+*.~*
+
+# Файлы Visual Studio 6
+*.opt
+
+# Файлы Visual Studio LightSwitch
+_Pvt_Extensions/
+
+# Файлы упаковки
+*.psess
+*.vsp
+*.vspx
+*.sap
+
+# Файлы настроек инструментов
+*.VC.db
+
+## Папки и файлы компиляции
+## ================================
+
+# Папки сборки
+[Bb]uild/
+[Bb]uilds/
+[Dd]ebug/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+[Ww]in32/
+[Aa]rm/
+[Aa]rm64/
+[Ii]ntermediate/
+[Oo]bj/
+[Oo]bj/
+*.obj
+*.tlb
+*.tli
+*.tlh
+*.tmp
+*.log
+*.idb
+*.pdb
+*.ipch
+*.pch
+*.res
+*.rsp
+*.sbr
+
+# Прекомпилированные заголовки
+*.pch
+*.ipch
+
+# Папка ipch (IntelliSense)
+ipch/
+*.ipch
+
+# Файлы манифеста
+*.manifest
+*.manifest.res
+
+# Файлы дампа
+*.dmp
+
+# Файлы покрытия кода
+*.gcda
+*.gcno
+*.gcov
+
+# Файлы профилирования
+*.psess
+*.vsp
+*.vspx
+
+# Временные файлы компилятора
+_UpgradeReport_Files/
+Backup*/
+
+## Папки и файлы проекта VS
+## ================================
+
+# Папки решения
+.vs/
+.vscode/
+.vsconfig
+*.swp
+
+# Файлы базы данных
+*.db
+*.mdb
+
+# Файлы развертывания
+*.dep
+*.embed
+*.embed.manifest
+
+# Специфичные файлы VS
+*.ncb
+*.ilk
+*.lib
+*.sln
+*.suo
+*.cache
+*.aps
+*.nlb
+*.odx
+*.odxL
+*.sdf
+*.opensdf
+*.dbmdl
+
+# Файлы SQL Server
+App_Data/*.mdf
+App_Data/*.ldf
+
+## Файлы CMake
+## ================================
+
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+install_manifest.txt
+compile_commands.json
+Makefile
+*.cmake
+
+## Папки и файлы зависимостей
+## ================================
+
+# NuGet пакеты
+packages/
+*.nupkg
+.nuget/
+NuGet.exe
+NuGet.Config
+NuGet.targets
+
+# Сторонние библиотеки
+lib/
+libs/
+*.lib
+*.a
+*.dll
+*.so
+*.dylib
+
+## Файлы операционной системы
+## ================================
+
+# Thumbnails
+._*
+
+# Файлы атрибутов папок
+[Dd]esktop.ini
+
+# Файлы переименования
+*.lnk
+
+# Временные файлы Mac
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Временные файлы Linux
+*.swp
+*~
+
+## Файлы IDE и редакторов
+## ================================
+
+# Visual Studio Code
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
+# JetBrains IDE
+.idea/
+*.iml
+
+# Sublime Text
+*.sublime-*
+
+# Notepad++
+*.bak
+
+# Vim
+*.swp
+*.swo
+
+## Файлы документации
+## ================================
+
+# Doxygen
+docs/html/
+docs/latex/
+
+## Файлы системы контроля версий
+## ================================
+
+.gitattributes
+.gitmodules
+
+## Файлы специфичные для C++
+## ================================
+
+# Скомпилированные объектные файлы
+*.o
+*.ko
+*.obj
+*.elf
+
+# Прекомпилированные заголовки
+*.gch
+*.pch
+
+# Статические библиотеки
+*.lai
+*.la
+*.a
+*.lib
+
+# Динамические библиотеки
+*.so
+*.so.*
+*.dylib
+*.dll
+
+# Исполняемые файлы
+*.exe
+*.out
+*.app
+*.ipa
+
+## Файлы отладки и анализа
+## ================================
+
+# Отладочные файлы
+*.pdb
+*.idb
+*.ipdb
+*.iobj
+
+# Файлы профилировщика
+*.psess
+*.vsp
+*.vspx
+
+# Файлы покрытия кода
+*.gcda
+*.gcno
+
+## Файлы автоматической сборки
+## ================================
+
+# Автоматически создаваемые файлы
+autom4te.cache/
+*.autosave
+
+# Файлы конфигурации
+config.status
+config.log
+
+## Исключения для файлов в папках
+## ================================
+
+# Не игнорировать README и лицензии в любых папках
+!*/README*
+!*/LICENSE*
+!*/COPYING*
+!*/AUTHORS*
+!*/CONTRIBUTORS*
+
+# Не игнорировать файлы конфигурации сборки
+!*/CMakeLists.txt
+!*/Makefile
+!*/Doxyfile
+
+## Дополнительные исключения
+## ================================
+
+# Исключить пустые папки (необязательно, но полезно)
+!*/placeholder.txt
